@@ -60,15 +60,19 @@ footer {
 }
 
 .habitBuilder {
-background: #fff8f0;
- margin-left: 15%;
+  background: #fff8f0;
+  margin-left: auto;
+  margin-right: 10%;
+  max-width: 1056px;
   padding-top: 35px;
+  float: right;
+
 }
 
 .habitBuilder label {
   font-family: "Courier New", sans-serif;
   font-size: 20px;
-  margin-left: 20%;
+  margin-left: 20.5%;
 }
 
 .habitBuilder input {
@@ -76,60 +80,98 @@ background: #fff8f0;
   margin-left: 6%;
 }
 
+.habitBuilder p {
+  text-align: center;
+}
+
 .habitPaper {
   background-color: white;
   width: 1056px;
   height: 816px;
   outline: 2px solid #5B5050;
-  outline-offset: 0px;
 }
 
-.dayOne {
+.weekOne {
   width: 528px;
   height: 116.5714px;
-  outline: 2px solid #5B5050;
+  outline: 1px solid #5B5050;
+  float: left;
 }
 
-.dayTwo {
-  width: 528px;
-  height: 116.5714px;
-  outline: 2px solid #5B5050;
+.weekOne h1 {
+  font-family: "Courier New", sans-serif;
+  font-size: medium;
+  margin-left: 25px;
 }
 
-.dayThree {
+.weekTwo {
   width: 528px;
   height: 116.5714px;
-  outline: 2px solid #5B5050;
-}
-
-.dayFour {
-  width: 528px;
-  height: 116.5714px;
-  outline: 2px solid #5B5050;
-}
-
-.dayFive {
-  width: 528px;
-  height: 116.5714px;
-  outline: 2px solid #5B5050;
-}
-
-.daySix {
-  width: 528px;
-  height: 116.5714px;
-  outline: 2px solid #5B5050;
-}
-
-.daySeven {
-  width: 528px;
-  height: 116.5714px;
-  outline: 2px solid #5B5050;
-}
-
-.dayEight {
-  width: 528px;
-  height: 116.5714px;
-  outline: 2px solid #5B5050;
+  outline: 1px solid #5B5050;
   float: right;
+}
+
+.weekTwo h1 {
+  font-family: "Courier New", sans-serif;
+  font-size: medium;
+  margin-left: 25px;
+}
+
+.buttons {
+  text-align: center;
+  margin-bottom: 10px;
   display: inline-block;
+  float: left;
+  margin-left: 5%;
+  margin-top: 86.5px;
+}
+
+.circled {
+font-size: 24px;
+  margin: 3.5px;
+}
+
+.squared {
+  font-size: 35px;
+  margin: 1px;
+}
+
+
+.triangled {
+  font-size: 27px;
+  margin: 2px;
+}
+
+.rowOne {
+  border-bottom: 1px dashed #5B5050;
+}
+
+.rowTwo {
+  border-bottom: 1px dashed #5B5050;
+}
+
+.rowThree {
+  border-bottom: 1px dashed #5B5050;
+}
+
+.rowFour {
+  border-bottom: 1px dashed #5B5050;
+}
+
+.rowFive {
+  border-bottom: 1px dashed #5B5050;
+}
+
+.rowSix {
+  border-bottom: 1px dashed #5B5050;
+}
+
+.buttons button {
+  font-size: 20px;
+  margin-right: 11px;
+  margin-left: 11px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  text-align: left;
 }
