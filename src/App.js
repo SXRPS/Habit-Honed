@@ -23,6 +23,7 @@ function App() {
                 <p>The Habit Tracker PDF Builder</p>
                 <button onClick={scrollToHabitBuilder}>&#9660;</button>
             </header>
+            <section>
             <div className='habitBuilder'>
                 <label>Themes:
                     <input type="radio" id="default" name="theme"/>
@@ -35,6 +36,7 @@ function App() {
                     <div id='dayOne' className="weekOne">
                         <h1>Day One:</h1>
                     </div>
+                    <div id='legendTtitle' className="legend">oi</div>
                     <div id='dayEight' className="weekOne"><h1>Day Eight:</h1></div>
                     <div id='dayTwo' className="weekOne"><h1>Day Two:</h1></div>
                     <div id='dayNine' className="weekOne"><h1>Day Nine:</h1></div>
@@ -88,9 +90,8 @@ function App() {
                         <button>+</button>
                     </div>
                 </div>
-
-
                 </div>
+            </section>
             </div>
 
     );
