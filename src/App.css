@@ -1,171 +1,224 @@
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fff8f0;
-
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f0;
 }
 
 .App {
-
+    max-width: 100%;
 
 }
 
 .dots {
-  max-width: 100%;
+    max-width: 100%;
     height: 40vh;
-  padding: 1px;
-  background-color: rgba(230,240,255,0);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-  border-radius: 8px;
-  opacity: 0.8;
-  background-image: radial-gradient(#000000 0.95px, #fff8f0 0.95px);
-  background-size: 10px 10px;
+    padding: 1px;
+    background-color: rgba(230, 240, 255, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    opacity: 0.8;
+    background-image: radial-gradient(#000000 0.95px, #fff8f0 0.95px);
+    background-size: 10px 10px;
+}
 
+input {
+    border: 0px;
 }
 
 
 header {
-  text-align: center;
-  font-family: 'Courier New', sans-serif;
-  font-size: 30px;
-  box-shadow: none;
+    text-align: center;
+    font-family: 'Courier New', sans-serif;
+    font-size: 30px;
+    box-shadow: none;
 }
 
 header h1 {
-  margin: 0;
-  color: #756363;
+    margin: 0;
+    color: #756363;
 }
 
 header p {
-  margin-top: 5px;
-  color: #666;
+    margin-top: 5px;
+    color: #666;
     margin-bottom: 10%;
 }
 
 header button {
-  font-size: 24px;
-  cursor: pointer;
-  background: none;
-  border: none;
-  color: #756363;
-  margin-bottom: 15%;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #756363;
+    margin-bottom: 15%;
 }
 
 
 footer {
-  margin-top: 10px;
-  text-align: center;
-  color: #666;
+    margin-top: 10px;
+    text-align: center;
+    color: #666;
 }
 
 .habitBuilder {
-  background: #fff8f0;
-  margin-left: auto;
-  margin-right: 30%;
-  max-width: 1056px;
-  padding-top: 35px;
-  float: right;
+    background: #fff8f0;
+    margin-left: auto;
+    margin-right: 30%;
+    max-width: 1056px;
+    padding-top: 35px;
+    float: right;
 
 }
 
 .habitBuilder label {
-  font-family: "Courier New", sans-serif;
-  font-size: 20px;
-  margin-left: 20.5%;
+    font-family: "Courier New", sans-serif;
+    font-size: 20px;
+    margin-left: 29%;
 }
 
 .habitBuilder input {
-  margin-bottom: 35px;
-  margin-left: 6%;
+    margin-bottom: 35px;
+    margin-left: 6%;
 }
 
 .habitBuilder p {
-  text-align: center;
+    text-align: center;
 }
 
 .habitPaper {
-  background-color: white;
-  width: 816px;
-  height: 1056px;
-  outline: 2px solid #5B5050;
+    background-color: white;
+    width: 816px;
+    height: 1056px;
+    outline: 1px solid #5B5050;
+    margin-left: 12%;
+    max-width: 816px;
+    max-height: 1056px;
+    table-layout: fixed;
+    border-collapse: collapse;
 }
 
-.weekOne {
-  width: 408px;
-  height: 116.5714px;
-  outline: 1px solid #5B5050;
-  float: left;
+.habitPaper input {
+    font-family: "Courier New", sans-serif;
 }
 
-.weekOne h1 {
-  font-family: "Courier New", sans-serif;
-  font-size: medium;
-  margin-left: 25px;
+td {
+    border: 1px solid black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 408px;
+    max-width: 250px;
+}
+
+.weeks {
+    width: 815px;
+    height: 117.333333px;
+    box-sizing: border-box;
+    outline: 1px solid #5B5050;
+    display: table;
+}
+
+
+.weeks h1 {
+    font-family: "Courier New", sans-serif;
+    font-size: medium;
+    margin-left: 2%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 9px;
 }
 
 .weekTwo {
-  width: 408px;
-  height: 116.5714px;
-  outline: 1px solid #5B5050;
-  float: right;
+    width: 816px;
+    height: 117.333333px;
+    outline: 1px solid #5B5050;
+    float: right;
 }
 
 .weekTwo h1 {
-  font-family: "Courier New", sans-serif;
-  font-size: medium;
-  margin-left: 25px;
+    font-family: "Courier New", sans-serif;
+    font-size: medium;
+    margin-left: 25px;
+    height: 9px;
 }
 
 .legend {
-  width: 816px;
-  height: 233.1428px;
-  outline: 1px solid #5B5050;
+    width: 816px;
+    height: 233.666667px;
+    border: 1px solid #5B5050;
+}
+
+.legend h1 {
+    font-family: "Courier New", sans-serif;
+    font-size: larger;
+    padding-left: 20px;
 }
 
 .buttons {
-  text-align: center;
-  margin-bottom: 10px;
-  display: inline-block;
-  float: left;
-  margin-left: 5%;
-  margin-top: 20%;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    margin-left: 6%;
+    margin-top: 25%;
+
 }
 
 .circled {
-font-size: 24px;
-  margin: 3.5px;
+    font-size: 24px;
+    margin: 3.5px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .squared {
-  font-size: 35px;
-  margin: 1px;
+    font-size: 35px;
+    margin: 1px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 
 .triangled {
-  font-size: 27px;
-  margin: 2px;
+    font-size: 27px;
+    margin: 2px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .rowOne {
-  border-bottom: 1px dashed #5B5050;
+    border-bottom: 1px dashed #5B5050;
 }
 
 
 .buttons button {
-  font-size: 20px;
-  margin-right: 11px;
-  margin-left: 11px;
-  margin-top: 11px;
-  cursor: pointer;
-  background: none;
-  border: none;
-  text-align: left;
+    font-size: 20px;
+    margin-right: 11px;
+    margin-left: 11px;
+    margin-top: 11px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-align: left;
 }
 
-section {
-  max-height: 900px;
-  max-width: 1900px;
-  margin-left: 17%;
+.legend-input {
+
+}
+
+.legend-input:hover {
+    background: #eaeaea;
+    border-radius: 3px;
+}
+
+.legend-input:focus-visible {
+    outline: 0;
+}
+
+.habit-row {
+    display: flex;
+    height: 29px;
 }
