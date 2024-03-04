@@ -10,6 +10,9 @@ function App() {
     const [weekOneCircles, setWeekOneCircles] = useState([]);
     const [weekOneSquares, setWeekOneSquares] = useState([]);
     const [weekOneTriangles, setWeekOneTriangles] = useState([]);
+    const [weekTwoCircles, setWeekTwoCircles] = useState([]);
+    const [weekTwoSquares, setWeekTwoSquares] = useState([]);
+    const [weekTwoTriangles, setWeekTwoTriangles] = useState([]);
 
     const scrollToHabitBuilder = () => {
         const habitBuilderElement = document.querySelector('.habitBuilder');
@@ -22,7 +25,7 @@ function App() {
 
             </div>
             <header>
-                <h1>Disciple'n;</h1>
+                <h1>Disciple'nd;</h1>
                 <p>The Habit Tracker PDF Builder</p>
                 <button onClick={scrollToHabitBuilder}>&#9660;</button>
             </header>
@@ -45,13 +48,13 @@ function App() {
                             <h1>Legend:</h1>
                             <div align='left'>
                                 <label>&#9711;:<input type='text' className='legend-input'
-                                                      placeholder='Read 10% of my book'/></label>
+                                                      placeholder='Read 10% of my book...'/></label>
                                 <br/>
                                 <label>&#9744;:<input type='text' className='legend-input'
-                                                      placeholder='Journal one page'/></label>
+                                                      placeholder='Journal one page...'/></label>
                                 <br/>
                                 <label>&#9651;:<input type='text' className='legend-input'
-                                                      placeholder='Write habits here!'/></label>
+                                                      placeholder='Write habits here...'/></label>
                             </div>
                         </td>
                     </tr>
@@ -68,7 +71,18 @@ function App() {
                                 {weekOneTriangles}
                             </div>
                         </td>
-                        <td><h1>Day Eight:</h1></td>
+                        <td>
+                            <h1>Day Eight:</h1>
+                            <div className='habit-row'>
+                                {weekTwoCircles}
+                            </div>
+                            <div className='habit-row'>
+                                {weekTwoSquares}
+                            </div>
+                            <div className='habit-row'>
+                                {weekTwoTriangles}
+                            </div>
+                            </td>
                     </tr>
                     <tr className='weeks'>
                         <td id='weekOne'>
@@ -83,7 +97,18 @@ function App() {
                                 {weekOneTriangles}
                             </div>
                         </td>
-                        <td id='weekTwo'><h1>Day Nine:</h1></td>
+                        <td id='weekTwo'>
+                            <h1>Day Nine:</h1>
+                            <div className='habit-row'>
+                                {weekTwoCircles}
+                            </div>
+                            <div className='habit-row'>
+                                {weekTwoSquares}
+                            </div>
+                            <div className='habit-row'>
+                                {weekTwoTriangles}
+                            </div>
+                        </td>
                     </tr>
                     <tr className='weeks'>
                         <td id='weekOne'>
@@ -98,7 +123,18 @@ function App() {
                                 {weekOneTriangles}
                             </div>
                         </td>
-                        <td id='weekTwo'><h1>Day Ten:</h1></td>
+                        <td id='weekTwo'>
+                            <h1>Day Ten:</h1>
+                            <div className='habit-row'>
+                                {weekTwoCircles}
+                            </div>
+                            <div className='habit-row'>
+                                {weekTwoSquares}
+                            </div>
+                            <div className='habit-row'>
+                                {weekTwoTriangles}
+                            </div>
+                        </td>
                     </tr>
                     <tr className='weeks'>
                         <td id='weekOne'>
@@ -113,7 +149,18 @@ function App() {
                                 {weekOneTriangles}
                             </div>
                         </td>
-                        <td id='weekTwo'><h1>Day Eleven:</h1></td>
+                        <td id='weekTwo'>
+                            <h1>Day Eleven:</h1>
+                            <div className='habit-row'>
+                                {weekTwoCircles}
+                            </div>
+                            <div className='habit-row'>
+                                {weekTwoSquares}
+                            </div>
+                            <div className='habit-row'>
+                                {weekTwoTriangles}
+                            </div>
+                        </td>
                     </tr>
                     <tr className='weeks'>
                         <td id='weekOne'>
@@ -128,7 +175,18 @@ function App() {
                                 {weekOneTriangles}
                             </div>
                         </td>
-                        <td id='weekTwo'><h1>Day Twelve:</h1></td>
+                        <td id='weekTwo'>
+                            <h1>Day Twelve:</h1>
+                            <div className='habit-row'>
+                                {weekTwoCircles}
+                            </div>
+                            <div className='habit-row'>
+                                {weekTwoSquares}
+                            </div>
+                            <div className='habit-row'>
+                                {weekTwoTriangles}
+                            </div>
+                        </td>
                     </tr>
                     <tr className='weeks'>
                         <td id='weekOne'>
@@ -143,7 +201,18 @@ function App() {
                                 {weekOneTriangles}
                             </div>
                         </td>
-                        <td id='weekTwo'><h1>Day Thirteen:</h1></td>
+                        <td id='weekTwo'>
+                            <h1>Day Thirteen:</h1>
+                            <div className='habit-row'>
+                                {weekTwoCircles}
+                            </div>
+                            <div className='habit-row'>
+                                {weekTwoSquares}
+                            </div>
+                            <div className='habit-row'>
+                                {weekTwoTriangles}
+                            </div>
+                        </td>
                     </tr>
                     <tr className='weeks'>
                         <td id='weekOne'>
@@ -158,7 +227,18 @@ function App() {
                                 {weekOneTriangles}
                             </div>
                         </td>
-                        <td id='weekTwo'><h1>Day Fourteen:</h1></td>
+                        <td id='weekTwo'>
+                            <h1>Day Fourteen:</h1>
+                            <div className='habit-row'>
+                                {weekTwoCircles}
+                            </div>
+                            <div className='habit-row'>
+                                {weekTwoSquares}
+                            </div>
+                            <div className='habit-row'>
+                                {weekTwoTriangles}
+                            </div>
+                        </td>
                     </tr>
                 </table>
             </div>
@@ -188,19 +268,19 @@ function App() {
                 </div>
                 <div className="rowTwo">
                     <div id='circles'>
-                        <button>-</button>
+                        <button onClick={() => setWeekTwoCircles(prevState => prevState.slice(0, prevState.length - 1))}>-</button>
                         <Circle></Circle>
-                        <button>+</button>
+                        <button onClick={() => setWeekTwoCircles([...weekTwoCircles, (<Circle></Circle>)])}>+</button>
                     </div>
                     <div id='squares'>
-                        <button>-</button>
+                        <button onClick={() => setWeekTwoSquares(prevState => prevState.slice(0, prevState.length - 1))}>-</button>
                         <Square></Square>
-                        <button>+</button>
+                        <button onClick={() => setWeekTwoSquares([...weekTwoSquares, (<Square></Square>)])}>+</button>
                     </div>
                     <div id='triangles'>
-                        <button>-</button>
+                        <button onClick={() => setWeekTwoTriangles(prevState => prevState.slice(0, prevState.length - 1))}>-</button>
                         <Triangle></Triangle>
-                        <button>+</button>
+                        <button onClick={() => setWeekTwoTriangles([...weekTwoTriangles, (<Triangle></Triangle>)])}>+</button>
                     </div>
                 </div>
             </div>
