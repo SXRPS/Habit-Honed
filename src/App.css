@@ -63,18 +63,20 @@ footer {
 
 .habitBuilder {
     background: #fff8f0;
-    margin-left: auto;
-    margin-right: 30%;
-    max-width: 1056px;
+    margin: auto;
     padding-top: 35px;
-    float: right;
+}
 
+.theButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
 }
 
 .habitBuilder label {
     font-family: "Courier New", sans-serif;
     font-size: 20px;
-    margin-left: 17%;
+    margin-left: 23.7%;
 }
 
 .habitBuilder input {
@@ -94,11 +96,12 @@ footer {
     background-color: white;
     width: 816px;
     height: 1056px;
-    outline: 1px solid #5B5050;
+    border: 0px solid #5B5050;
     max-width: 816px;
     max-height: 1056px;
     table-layout: fixed;
     border-collapse: collapse;
+
 }
 
 .habitPaper input {
@@ -112,14 +115,13 @@ td {
     text-overflow: ellipsis;
     width: 408px;
     max-width: 250px;
-    border-left: 0px;
 }
 
 .weeks {
-    width: 815px;
+    width: 816px;
     height: 117.333333px;
     box-sizing: border-box;
-    outline: 1px solid #5B5050;
+    outline: 0px solid #5B5050;
     display: table;
 }
 
@@ -161,37 +163,50 @@ td {
 
 .buttons {
     text-align: center;
-    display: inline-block;
-    float: left;
-    margin-left: 9%;
-    margin-top: 25%;
-    margin-right: 9%;
-
+    margin: auto;
 }
 
 .circled {
     font-size: 24px;
-    margin: 3.5px;
+    margin: auto;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+    height: 20px;
+    width: 20px;
+    background-color: none;
+    border-radius: 50%;
+    border: 1.5px solid black;
+    display:inline-block;
+
 }
 
 .squared {
     font-size: 24px;
-    margin: 3.5px;
+    margin: auto;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+    height: 20px;
+    width: 20px;
+    border: 1.5px solid black;
+    display:inline-block;
+
+}
+
+span {
+    width: 8%;
+
 }
 
 
 .triangled {
     font-size: 24px;
-    margin: 3.5px;
+    margin: auto;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+
 }
 
 .rowOne {
@@ -201,17 +216,13 @@ td {
 
 .buttons button {
     font-size: 20px;
-    margin-right: 11px;
-    margin-left: 11px;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 11px;
     cursor: pointer;
     background: none;
     border: none;
     text-align: left;
-}
-
-.legend-input {
-
 }
 
 .legend-input:hover {

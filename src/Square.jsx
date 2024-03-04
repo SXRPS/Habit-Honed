@@ -1,5 +1,5 @@
 export function Square() {
     return (
-        <span className="squared">&#9744;</span>
+        <span className="squared"></span>
     )
 }
