@@ -315,6 +315,13 @@ function App() {
                             </td>
                         </tr>
                     </table>
+                    <div className="quote">
+                    <p>"Make it obvious,</p>
+                    <p> make it attractive,</p>
+                    <p> make it easy, and</p>
+                    <p> make it satisfying."</p>
+                    <p>-James Clear</p>
+                </div>
                 </div>
 
             </div>

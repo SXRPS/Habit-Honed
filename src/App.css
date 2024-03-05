@@ -66,7 +66,7 @@ footer {
     margin: auto;
     padding-top: 35px;
     background-image: url("wavesNegative.svg") ;
-    background-size: 150% 50%;
+    background-size: 150% 63%;
     background-repeat: no-repeat;
     background-position-y: bottom;
 }
@@ -119,6 +119,13 @@ footer {
 
 .habitBuilder p {
     text-align: center;
+}
+
+.quote {
+    font-family: "Courier New", sans-serif;
+    margin: auto;
+    text-align: center;
+    user-select: none;
 }
 
 .habitPaper {
