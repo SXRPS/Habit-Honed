@@ -31,13 +31,30 @@ function App() {
             </header>
 
             <div className='habitBuilder'>
-                <label>Themes:
-                    <input type="radio" id="default" name="theme"/>
+                <div className='themes' align='center' width='device-screen-width'>
+
+                    <label>
+                    <input type="radio" id="default" name="theme" />
+                    <img src="./No_icon_red.svg.png" className="iconRadio" />
+                    </label>
+                    <label>
                     <input type="radio" id="spring" name="theme"/>
+                        <img src="./CBIcon.png" className="iconRadio"/>
+                    </label>
+                    <label>
                     <input type="radio" id="summer" name="theme"/>
+                        <img src="./831682.png" className="iconRadio" />
+                    </label>
+                    <label>
                     <input type="radio" id="fall" name="theme"/>
+                        <img src="./leaves-autumn-icon-png.png" className="iconRadio" />
+                    </label>
+                    <label>
                     <input type="radio" id="winter" name="theme"/>
-                </label>
+                        <img src="./2530064.png" className="iconRadio" />
+                    </label>
+
+                </div>
                 <div className='theButtons'>
                     <div className='buttons'>
                         <div className="rowOne">
@@ -142,7 +159,7 @@ function App() {
                             </td>
                         </tr>
                         <tr className='weeks'>
-                            <td id='weekOne'>
+                            <td>
                                 <h1>Day Two:</h1>
                                 <div className='habit-row'>
                                     {weekOneCircles}
@@ -154,7 +171,7 @@ function App() {
                                     {weekOneTriangles}
                                 </div>
                             </td>
-                            <td id='weekTwo'>
+                            <td>
                                 <h1>Day Nine:</h1>
                                 <div className='habit-row'>
                                     {weekTwoCircles}
@@ -299,6 +316,7 @@ function App() {
                         </tr>
                     </table>
                 </div>
+
             </div>
         </div>
 

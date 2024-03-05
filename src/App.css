@@ -65,6 +65,10 @@ footer {
     background: #fff8f0;
     margin: auto;
     padding-top: 35px;
+    background-image: url("wavesNegative.svg") ;
+    background-size: 150% 50%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
 }
 
 .theButtons {
@@ -73,19 +77,44 @@ footer {
     width: 100%;
 }
 
-.habitBuilder label {
+.themes {
+    width: 100%;
+    margin: auto;
     font-family: "Courier New", sans-serif;
     font-size: 20px;
-    margin-left: 23.7%;
+    text-align: center;
+}
+
+.iconRadio {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+    display: inline-flex;
+    margin-right: 20px;
+}
+
+/* HIDE RADIO */
+[type=radio] {
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 .habitBuilder input {
     margin-bottom: 35px;
-    margin-left: 6%;
+}
+
+
+.legend label {
+    font-family: "Courier New", sans-serif;
+    font-size: 20px;
+    margin-left: 15%;
+    text-align: center;
 }
 
 .legend input {
     width: 200px;
+    margin-left: 10px;
 }
 
 .habitBuilder p {
@@ -96,7 +125,6 @@ footer {
     background-color: white;
     width: 816px;
     height: 1056px;
-    border: 0px solid #5B5050;
     max-width: 816px;
     max-height: 1056px;
     table-layout: fixed;
@@ -109,20 +137,24 @@ footer {
 }
 
 td {
-    border: 1px solid black;
+    border: 2px solid black;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     width: 408px;
-    max-width: 250px;
+    max-width: 408px;
+    max-height: 117.333333px;
 }
+
 
 .weeks {
     width: 816px;
+    max-width: 816px;
     height: 117.333333px;
-    box-sizing: border-box;
-    outline: 0px solid #5B5050;
-    display: table;
+    border: 1px solid #5B5050;
+
+    max-height: 117.333333px;
+    
 }
 
 
@@ -130,35 +162,29 @@ td {
     font-family: "Courier New", sans-serif;
     font-size: medium;
     margin-left: 2%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    height: 9px;
-}
-
-.weekTwo {
-    width: 816px;
-    height: 117.333333px;
-    outline: 1px solid #5B5050;
-    float: right;
-}
-
-.weekTwo h1 {
-    font-family: "Courier New", sans-serif;
-    font-size: medium;
-    margin-left: 25px;
+    margin-bottom: 6px;
     height: 9px;
 }
 
 .legend {
     width: 816px;
     height: 233.666667px;
-    border: 1px solid #5B5050;
+    border: 2px solid #5B5050;
+    
+    max-width: 816px;
+}
+
+.legend td {
+    width: 408px;
+    max-width: 40px;
+
 }
 
 .legend h1 {
     font-family: "Courier New", sans-serif;
     font-size: larger;
     padding-left: 20px;
+    max-width: 408px;
 }
 
 .buttons {
@@ -176,7 +202,7 @@ td {
     width: 20px;
     background-color: none;
     border-radius: 50%;
-    border: 1.5px solid black;
+    border: 1.7px solid black;
     display:inline-block;
 
 }
@@ -189,13 +215,8 @@ td {
     user-select: none; /* Standard syntax */
     height: 20px;
     width: 20px;
-    border: 1.5px solid black;
+    border: 1.7px solid black;
     display:inline-block;
-
-}
-
-span {
-    width: 8%;
 
 }
 
@@ -207,6 +228,10 @@ span {
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
 
+}
+
+span {
+    width: 8%;
 }
 
 .rowOne {
