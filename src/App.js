@@ -13,6 +13,11 @@ function App() {
     const [weekTwoCircles, setWeekTwoCircles] = useState([]);
     const [weekTwoSquares, setWeekTwoSquares] = useState([]);
     const [weekTwoTriangles, setWeekTwoTriangles] = useState([]);
+    const [selectedBg, setSelectedBg] = useState(['default']);
+
+    const handleBgChange = (event) => {
+        setSelectedBg(event.target.value);
+    }
 
     const scrollToHabitBuilder = () => {
         const habitBuilderElement = document.querySelector('.habitBuilder');
@@ -34,23 +39,23 @@ function App() {
                 <div className='themes' align='center' width='device-screen-width'>
 
                     <label>
-                    <input type="radio" id="default" name="theme" />
+                    <input type="radio" value="default" name="theme" checked={selectedBg === "default"} onChange={handleBgChange}/>
                     <img src="./No_icon_red.svg.png" className="iconRadio" />
                     </label>
                     <label>
-                    <input type="radio" id="spring" name="theme"/>
+                    <input type="radio" value="spring" name="theme" checked={selectedBg === "spring"} onChange={handleBgChange}/>
                         <img src="./CBIcon.png" className="iconRadio"/>
                     </label>
                     <label>
-                    <input type="radio" id="summer" name="theme"/>
+                    <input type="radio" value="summer" name="theme"/>
                         <img src="./831682.png" className="iconRadio" />
                     </label>
                     <label>
-                    <input type="radio" id="fall" name="theme"/>
+                    <input type="radio" value="fall" name="theme"/>
                         <img src="./leaves-autumn-icon-png.png" className="iconRadio" />
                     </label>
                     <label>
-                    <input type="radio" id="winter" name="theme"/>
+                    <input type="radio" value="winter" name="theme"/>
                         <img src="./2530064.png" className="iconRadio" />
                     </label>
 
@@ -112,7 +117,8 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <table className='habitPaper'>
+                    <table className='habitPaper' style={{backgroundImage: `url(${getBackgroundImage(selectedBg)})`}}>
+
                         <tr className='legend'>
                             <td align='center'>
                                 <h1>Habit</h1>
@@ -328,6 +334,19 @@ function App() {
         </div>
 
     );
+}
+
+function getBackgroundImage(selectedBg) {
+    switch (selectedBg) {
+        case 'default':
+            return "default";
+
+        case 'spring':
+            return "./Cherry_Blossom_Background.png";
+
+        default:
+            return 'none'; // Default background
+    }
 }
 
 export default App;
