@@ -39,24 +39,27 @@ function App() {
                 <div className='themes' align='center' width='device-screen-width'>
 
                     <label>
-                    <input type="radio" value="default" name="theme" checked={selectedBg === "default"} onChange={handleBgChange}/>
-                    <img src="./No_icon_red.svg.png" className="iconRadio" />
+                        <input type="radio" value="default" name="theme" checked={selectedBg === "default"}
+                               onChange={handleBgChange}/>
+                        <img src="./No_icon_red.svg.png" className="iconRadio"/>
                     </label>
                     <label>
-                    <input type="radio" value="spring" name="theme" checked={selectedBg === "spring"} onChange={handleBgChange}/>
+                        <input type="radio" value="spring" name="theme" checked={selectedBg === "spring"}
+                               onChange={handleBgChange}/>
                         <img src="./CBIcon.png" className="iconRadio"/>
                     </label>
                     <label>
-                    <input type="radio" value="summer" name="theme"/>
-                        <img src="./831682.png" className="iconRadio" />
+                        <input type="radio" value="summer" name="theme" checked={selectedBg === "summer"}
+                               onChange={handleBgChange}/>
+                        <img src="./831682.png" className="iconRadio"/>
                     </label>
                     <label>
-                    <input type="radio" value="fall" name="theme"/>
-                        <img src="./leaves-autumn-icon-png.png" className="iconRadio" />
+                        <input type="radio" value="fall" name="theme"/>
+                        <img src="./leaves-autumn-icon-png.png" className="iconRadio"/>
                     </label>
                     <label>
-                    <input type="radio" value="winter" name="theme"/>
-                        <img src="./2530064.png" className="iconRadio" />
+                        <input type="radio" value="winter" name="theme"/>
+                        <img src="./2530064.png" className="iconRadio"/>
                     </label>
 
                 </div>
@@ -322,14 +325,16 @@ function App() {
                         </tr>
                     </table>
                     <div className="quote">
-                    <p>"Make it obvious,</p>
-                    <p> make it attractive,</p>
-                    <p> make it easy, and</p>
-                    <p> make it satisfying."</p>
-                    <p>-James Clear</p>
+                        <p>"Make it obvious,</p>
+                        <p> make it attractive,</p>
+                        <p> make it easy, and</p>
+                        <p> make it satisfying."</p>
+                        <p>-James Clear</p>
+                    </div>
                 </div>
+                <div className="PDFButton">
+                    <button>Download PDF</button>
                 </div>
-
             </div>
         </div>
 
@@ -344,6 +349,8 @@ function getBackgroundImage(selectedBg) {
         case 'spring':
             return "./Cherry_Blossom_Background.png";
 
+        case 'summer':
+            return "./summerbg.webp";
         default:
             return 'none'; // Default background
     }
