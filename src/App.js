@@ -26,12 +26,16 @@ function App() {
 
     return (
         <div className="App">
+            <div className="navbar">
+                <a href="#home">Home</a>
+                <a href="#news">How does this work?</a>
+                <a href="">Reach out!</a>
+            </div>
             <div className="dots">
-
             </div>
             <header>
                 <h1>Disciple'nd;</h1>
-                <p>The Habit Tracker PDF Builder</p>
+                <p>Habit Tracker PDF Builder</p>
                 <button onClick={scrollToHabitBuilder}>&#9660;</button>
             </header>
 
