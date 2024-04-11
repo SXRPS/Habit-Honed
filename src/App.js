@@ -3,7 +3,8 @@ import {Circle} from "./Circle";
 import {Square} from "./Square";
 import {Triangle} from "./Triangle";
 import {useState} from "react";
-
+import html2pdf from 'html2pdf.js';
+import React from "react";
 
 function App() {
 
@@ -17,25 +18,38 @@ function App() {
 
     const handleBgChange = (event) => {
         setSelectedBg(event.target.value);
-    }
+    };
 
     const scrollToHabitBuilder = () => {
         const habitBuilderElement = document.querySelector('.habitBuilder');
         habitBuilderElement.scrollIntoView({behavior: 'smooth'});
     };
 
+    const saveAsPdf = () => {
+        const element = document.getElementById('habitPaper');
+        const opt = {
+            margin:       0,
+            padding:      0,
+            filename:     'HabitTracker.pdf',
+            image:        { type: 'pdf', quality: 1},
+            html2canvas:  { scale: 3 },
+            jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' },
+        };
+
+        html2pdf().from(element).set(opt).save();
+    };
+
+
     return (
         <div className="App">
-            <div className="navbar">
-                <a href="#home">Home</a>
-                <a href="#news">How does this work?</a>
-                <a href="">Reach out!</a>
-            </div>
             <div className="dots">
             </div>
             <header>
-                <h1>Disciple'nd;</h1>
+                <h1>Habit Canvas</h1>
                 <p>Habit Tracker PDF Builder</p>
+                <div className="references">
+                <button href='www.linkedin.com/in/marc-anthony-serpa-90849529b'>Reach Out</button>
+                </div>
                 <button onClick={scrollToHabitBuilder}>&#9660;</button>
             </header>
 
@@ -70,7 +84,7 @@ function App() {
                 <div className='theButtons'>
                     <div className='buttons'>
                         <div className="rowOne">
-                            <div id='circles'>
+                            <div className='circles'>
                                 <button
                                     onClick={() => setWeekOneCircles(prevState => prevState.slice(0, prevState.length - 1))}>-
                                 </button>
@@ -78,7 +92,7 @@ function App() {
                                 <button onClick={() => setWeekOneCircles([...weekOneCircles, (<Circle></Circle>)])}>+
                                 </button>
                             </div>
-                            <div id='squares'>
+                            <div className='squares'>
                                 <button
                                     onClick={() => setWeekOneSquares(prevState => prevState.slice(0, prevState.length - 1))}>-
                                 </button>
@@ -86,7 +100,7 @@ function App() {
                                 <button onClick={() => setWeekOneSquares([...weekOneSquares, (<Square></Square>)])}>+
                                 </button>
                             </div>
-                            <div id='triangles'>
+                            <div className='triangles'>
                                 <button
                                     onClick={() => setWeekOneTriangles(prevState => prevState.slice(0, prevState.length - 1))}>-
                                 </button>
@@ -124,7 +138,7 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <table className='habitPaper' style={{backgroundImage: `url(${getBackgroundImage(selectedBg)})`}}>
+                    <table id='habitPaper' className='habitPaper' style={{backgroundImage: `url(${getBackgroundImage(selectedBg)})`}}>
 
                         <tr className='legend'>
                             <td align='center'>
@@ -134,13 +148,13 @@ function App() {
                             <td align='center'>
                                 <h1>Legend:</h1>
                                 <div align='left'>
-                                    <label>&#9711;:<input type='text' className='legend-input'
+                                    <label><Circle></Circle>:<input type='text' className='legend-input'
                                                           placeholder='Read 10% of my book...'/></label>
                                     <br/>
-                                    <label>&#9744;:<input type='text' className='legend-input'
+                                    <label><Square></Square>:<input type='text' className='legend-input'
                                                           placeholder='Journal one page...'/></label>
                                     <br/>
-                                    <label>&#9651;:<input type='text' className='legend-input'
+                                    <label><Triangle></Triangle>:<input type='text' className='legend-input'
                                                           placeholder='Write habits here...'/></label>
                                 </div>
                             </td>
@@ -337,7 +351,7 @@ function App() {
                     </div>
                 </div>
                 <div className="PDFButton">
-                    <button>Download PDF</button>
+                    <button className="downloadPdf" onClick={saveAsPdf}>Download PDF</button>
                 </div>
             </div>
         </div>

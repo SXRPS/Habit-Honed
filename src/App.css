@@ -7,28 +7,6 @@ body {
 
 .App {
     max-width: 100%;
-
-}
-
-.navbar {
-    text-align: center;
-    overflow: hidden;
-    background-color: #E6D0B6;
-    width: 100%;
-}
-
-.navbar a {
-    float: left;
-    display: block;
-    color: #756363;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    background: #ddd;
-    color: black;
 }
 
 .dots {
@@ -39,14 +17,13 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0);
     border-radius: 8px;
     opacity: 0.8;
-    background-image: radial-gradient(#000000 0.95px, #fff8f0 0.95px);
+    background-image: radial-gradient(#000000 1.5px, #fff8f0 1.5px);
     background-size: 10px 10px;
 }
 
 input {
     border: 0px;
 }
-
 
 header {
     text-align: center;
@@ -63,7 +40,7 @@ header h1 {
 header p {
     margin-top: 5px;
     color: #666;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
 }
 
 header button {
@@ -73,6 +50,26 @@ header button {
     border: none;
     color: #756363;
     margin-bottom: 15%;
+    border-radius: 10px;
+}
+
+header button:hover {
+    background: #dbdbdb;
+}
+
+.references {
+    text-align: center;
+}
+
+.references button {
+    margin-bottom: 7%;
+    border-radius: 10px;
+    font-family: "Courier New", sans-serif;
+
+}
+
+.references button:hover {
+    background: #dbdbdb;
 }
 
 
@@ -96,6 +93,21 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
+    border-radius: 10px;
+}
+
+.theButtons button {
+    width: 23px;
+    border-radius: 10px;
+    max-width: 23px;
+    text-align: center;
+}
+
+.theButtons button:hover {
+    background: #dbdbdb;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
 }
 
 .themes {
@@ -128,15 +140,17 @@ footer {
 
 .legend label {
     font-family: "Courier New", sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 15%;
     text-align: center;
 }
 
 .legend input {
     width: 200px;
-    margin-left: 10px;
+    height: 20px;
+    margin-left: 15px;
     border-radius: 5px;
+    margin-bottom: 6%;
 }
 
 .habitBuilder p {
@@ -155,11 +169,13 @@ footer {
     background-color: white;
     width: 816px;
     height: 1056px;
-    max-width: 816px;
+    max-width: 817px;
     max-height: 1056px;
     table-layout: fixed;
     border-collapse: collapse;
     margin: auto;
+    border: 2px solid black;
+    padding: 0px;
 
 }
 
@@ -183,9 +199,7 @@ td {
     max-width: 816px;
     height: 117.333333px;
     border: 1px solid #5B5050;
-
     max-height: 117.333333px;
-    
 }
 
 
@@ -193,16 +207,16 @@ td {
     font-family: "Courier New", sans-serif;
     font-size: medium;
     margin-left: 2%;
-    margin-bottom: 6px;
-    height: 9px;
+    margin-bottom: 9px;
+    height: 7px;
 }
 
 .legend {
     width: 816px;
-    height: 233.666667px;
+    height: 229.98px;
     border: 2px solid #5B5050;
-    
     max-width: 816px;
+    text-align: center;
 }
 
 .legend td {
@@ -246,18 +260,16 @@ td {
     width: 20px;
     border: 2px solid black;
     display:inline-block;
-
 }
 
 
 .triangled {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     margin: auto;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
-
 }
 
 span {
@@ -273,7 +285,6 @@ Circle {
     border-bottom: 1px dashed #5B5050;
 }
 
-
 .buttons button {
     font-size: 20px;
     margin-right: auto;
@@ -282,7 +293,7 @@ Circle {
     cursor: pointer;
     background: none;
     border: none;
-    text-align: left;
+    text-align: center;
 }
 
 .legend-input:hover {
@@ -306,6 +317,22 @@ Circle {
 .PDFButton {
     margin: auto;
     text-align: center;
-    margin-top: 3%;
-    padding-bottom: 3%;
+    margin-top: 2%;
+    padding-bottom: 2%;
+}
+
+.downloadPdf {
+    border: 1.5px solid black;
+    border-radius: 100px;
+    font-family: Arial, sans-serif;
+    color: Black;
+    font-size: 20px;
+    padding: 8px;
+    background: #fff8f0;
+    text-decoration: none;
+}
+
+.downloadPdf:hover {
+    background: #dbdbdb;
+    text-decoration: none;
 }
