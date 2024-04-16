@@ -110,6 +110,10 @@ footer {
     text-align: center;
 }
 
+.buttons {
+    max-width: 12.88%;
+}
+
 .themes {
     width: 100%;
     margin: auto;
