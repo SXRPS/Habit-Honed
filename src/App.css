@@ -264,6 +264,15 @@ td {
     display:inline-block;
 }
 
+.triangled {
+    font-size: 28px;
+    font-weight: bold;
+    margin: auto;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
 span {
     width: 8%;
     max-width: 407px;
