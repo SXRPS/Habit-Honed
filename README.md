@@ -1,4 +1,4 @@
-# HabitCanvas | Habit Tracker PDF Builder
+# Habit-Honed | Habit Tracker PDF Builder
 
 Create personalized habit tracker printable PDFs with HabitCanvas.
 
