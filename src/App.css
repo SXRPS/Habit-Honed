@@ -43,7 +43,7 @@ header p {
     margin-bottom: 7%;
 }
 
-header button {
+header button, a {
     font-size: 24px;
     cursor: pointer;
     background: none;
@@ -51,24 +51,22 @@ header button {
     color: #756363;
     margin-bottom: 15%;
     border-radius: 10px;
+    text-decoration: none;
+    text-underline: none;
 }
 
-header button:hover {
+header button:hover, a:hover {
     background: #dbdbdb;
 }
 
 .references {
-    text-align: center;
-}
-
-.references button {
     margin-bottom: 7%;
     border-radius: 10px;
     font-family: "Courier New", sans-serif;
-
+    text-align: center;
 }
 
-.references button:hover {
+.references button:hover, a {
     background: #dbdbdb;
 }
 
@@ -99,14 +97,14 @@ footer {
     border-radius: 10px;
 }
 
-.theButtons button {
+.theButtons button,a {
     width: 23px;
     border-radius: 10px;
     max-width: 23px;
     text-align: center;
 }
 
-.theButtons button:hover {
+.theButtons button:hover, a:hover {
     background: #dbdbdb;
     border-radius: 10px;
     width: 100%;
@@ -286,7 +284,7 @@ Circle {
     border-bottom: 1px dashed #5B5050;
 }
 
-.buttons button {
+.buttons button, a {
     font-size: 20px;
     margin-right: auto;
     margin-left: auto;

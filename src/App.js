@@ -45,10 +45,10 @@ function App() {
             <div className="dots">
             </div>
             <header>
-                <h1>Habit Canvas</h1>
+                <h1>Habit-Honed</h1>
                 <p>Habit Tracker PDF Builder</p>
                 <div className="references">
-                <button href='www.linkedin.com/in/marc-anthony-serpa-90849529b'>Reach Out</button>
+                <a href='https://www.linkedin.com/in/marc-anthony-serpa-90849529b' target={'_blank'}>Reach Out</a>
                 </div>
                 <button onClick={scrollToHabitBuilder}>&#9660;</button>
             </header>
@@ -72,11 +72,13 @@ function App() {
                         <img src="./831682.png" className="iconRadio"/>
                     </label>
                     <label>
-                        <input type="radio" value="fall" name="theme"/>
+                        <input type="radio" value="fall" name="theme" checked={selectedBg === "fall"}
+                               onChange={handleBgChange}/>
                         <img src="./leaves-autumn-icon-png.png" className="iconRadio"/>
                     </label>
                     <label>
-                        <input type="radio" value="winter" name="theme"/>
+                        <input type="radio" value="winter" name="theme" checked={selectedBg === "winter"}
+                               onChange={handleBgChange}/>
                         <img src="./2530064.png" className="iconRadio"/>
                     </label>
 
@@ -369,6 +371,13 @@ function getBackgroundImage(selectedBg) {
 
         case 'summer':
             return "./summerbg.webp";
+
+        case 'fall':
+            return "./FallBg.png";
+
+        case 'winter':
+            return "./WinterBg.png";
+
         default:
             return 'none'; // Default background
     }
