@@ -55,8 +55,23 @@ header button, a {
     text-underline: none;
 }
 
-header button:hover, a:hover {
+header img {
+    width: 40px;
+    height: 40px;
+    filter: invert(38%) sepia(4%) saturate(1421%) hue-rotate(314deg) brightness(104%) contrast(93%);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+header img:hover {
     background: #dbdbdb;
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+}
+
+.insta:hover {
+    border-radius: 10px;
 }
 
 .references {
@@ -66,8 +81,8 @@ header button:hover, a:hover {
     text-align: center;
 }
 
-.references button:hover, a {
-    background: #dbdbdb;
+.references a:hover {
+    background: none;
 }
 
 table {
