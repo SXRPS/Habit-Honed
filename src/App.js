@@ -20,6 +20,19 @@ function App() {
         setSelectedBg(event.target.value);
     };
 
+    const [selectedFont, setSelectedFont] = useState("courier");
+    const handleFontChange = (event) => {
+        setSelectedFont(event.target.value);
+    };
+
+    // State for selected text alignment
+    const [selectedAlignment, setSelectedAlignment] = useState('left');
+
+    // Function to handle changes in text alignment
+    const handleAlignmentChange = (event) => {
+        setSelectedAlignment(event.target.value);
+    };
+
     const scrollToHabitBuilder = () => {
         const habitBuilderElement = document.querySelector('.habitBuilder');
         habitBuilderElement.scrollIntoView({behavior: 'smooth'});
@@ -141,30 +154,29 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <table id='habitPaper' className='habitPaper' style={{backgroundImage: `url(${getBackgroundImage(selectedBg)})`}}>
-
+                    <table id='habitPaper' className='habitPaper' style={{backgroundImage: `url(${getBackgroundImage(selectedBg)})`, fontFamily: getFont(selectedFont), textAlign: selectedAlignment}}>
                         <tr className='legend'>
                             <td align='center'>
                                 <h1>Habit</h1>
                                 <h1>Tracker</h1>
                             </td>
                             <td align='center'>
-                                <h1>Legend:</h1>
+                                <h1>Legend</h1>
                                 <div align='left'>
-                                    <label><Circle></Circle>:<input type='text' className='legend-input'
+                                    <label><Circle></Circle><input type='text' className='legend-input'
                                                           placeholder='Read 10% of my book...'/></label>
                                     <br/>
-                                    <label><Square></Square>:<input type='text' className='legend-input'
+                                    <label><Square></Square><input type='text' className='legend-input'
                                                           placeholder='Journal one page...'/></label>
                                     <br/>
-                                    <label><Triangle></Triangle>:<input type='text' className='legend-input'
+                                    <label><Triangle></Triangle><input type='text' className='legend-input'
                                                           placeholder='Write habits here...'/></label>
                                 </div>
                             </td>
                         </tr>
                         <tr className='weeks'>
                             <td id='weekOne'>
-                                <h1>Day One:</h1>
+                                <h1>Day One</h1>
                                 <div className='habit-row'>
                                     {weekOneCircles}
                                 </div>
@@ -176,7 +188,7 @@ function App() {
                                 </div>
                             </td>
                             <td>
-                                <h1>Day Eight:</h1>
+                                <h1>Day Eight</h1>
                                 <div className='habit-row'>
                                     {weekTwoCircles}
                                 </div>
@@ -190,7 +202,7 @@ function App() {
                         </tr>
                         <tr className='weeks'>
                             <td>
-                                <h1>Day Two:</h1>
+                                <h1>Day Two</h1>
                                 <div className='habit-row'>
                                     {weekOneCircles}
                                 </div>
@@ -202,7 +214,7 @@ function App() {
                                 </div>
                             </td>
                             <td>
-                                <h1>Day Nine:</h1>
+                                <h1>Day Nine</h1>
                                 <div className='habit-row'>
                                     {weekTwoCircles}
                                 </div>
@@ -216,7 +228,7 @@ function App() {
                         </tr>
                         <tr className='weeks'>
                             <td id='weekOne'>
-                                <h1>Day Three:</h1>
+                                <h1>Day Three</h1>
                                 <div className='habit-row'>
                                     {weekOneCircles}
                                 </div>
@@ -228,7 +240,7 @@ function App() {
                                 </div>
                             </td>
                             <td id='weekTwo'>
-                                <h1>Day Ten:</h1>
+                                <h1>Day Ten</h1>
                                 <div className='habit-row'>
                                     {weekTwoCircles}
                                 </div>
@@ -242,7 +254,7 @@ function App() {
                         </tr>
                         <tr className='weeks'>
                             <td id='weekOne'>
-                                <h1>Day Four:</h1>
+                                <h1>Day Four</h1>
                                 <div className='habit-row'>
                                     {weekOneCircles}
                                 </div>
@@ -254,7 +266,7 @@ function App() {
                                 </div>
                             </td>
                             <td id='weekTwo'>
-                                <h1>Day Eleven:</h1>
+                                <h1>Day Eleven</h1>
                                 <div className='habit-row'>
                                     {weekTwoCircles}
                                 </div>
@@ -268,7 +280,7 @@ function App() {
                         </tr>
                         <tr className='weeks'>
                             <td id='weekOne'>
-                                <h1>Day Five:</h1>
+                                <h1>Day Five</h1>
                                 <div className='habit-row'>
                                     {weekOneCircles}
                                 </div>
@@ -280,7 +292,7 @@ function App() {
                                 </div>
                             </td>
                             <td id='weekTwo'>
-                                <h1>Day Twelve:</h1>
+                                <h1>Day Twelve</h1>
                                 <div className='habit-row'>
                                     {weekTwoCircles}
                                 </div>
@@ -294,7 +306,7 @@ function App() {
                         </tr>
                         <tr className='weeks'>
                             <td id='weekOne'>
-                                <h1>Day Six:</h1>
+                                <h1>Day Six</h1>
                                 <div className='habit-row'>
                                     {weekOneCircles}
                                 </div>
@@ -306,7 +318,7 @@ function App() {
                                 </div>
                             </td>
                             <td id='weekTwo'>
-                                <h1>Day Thirteen:</h1>
+                                <h1>Day Thirteen</h1>
                                 <div className='habit-row'>
                                     {weekTwoCircles}
                                 </div>
@@ -320,7 +332,7 @@ function App() {
                         </tr>
                         <tr className='weeks'>
                             <td id='weekOne'>
-                                <h1>Day Seven:</h1>
+                                <h1>Day Seven</h1>
                                 <div className='habit-row'>
                                     {weekOneCircles}
                                 </div>
@@ -332,7 +344,7 @@ function App() {
                                 </div>
                             </td>
                             <td id='weekTwo'>
-                                <h1>Day Fourteen:</h1>
+                                <h1>Day Fourteen</h1>
                                 <div className='habit-row'>
                                     {weekTwoCircles}
                                 </div>
@@ -345,12 +357,46 @@ function App() {
                             </td>
                         </tr>
                     </table>
-                    <div className="quote">
-                        <p>"Make it obvious,</p>
-                        <p> make it attractive,</p>
-                        <p> make it easy, and</p>
-                        <p> make it satisfying."</p>
-                        <p>-James Clear</p>
+                    <div className="fontMenu">
+                        <p>Font & Margin</p>
+                        <select value={selectedFont} onChange={handleFontChange}>
+                            <option value="courier">Courier New</option>
+                            <option value="arial">Arial</option>
+                            <option value="timesNewRoman">Times New Roman</option>
+                            <option value="helvetica">Helvetica</option>
+                            <option value="futura">Futura</option>
+                        </select>
+                        <br/>
+                        <label>
+                            <input
+                                type="radio"
+                                value="left"
+                                name="alignment"
+                                checked={selectedAlignment === "left"}
+                                onChange={handleAlignmentChange}
+                            />
+                            <img src="./leftAlign.png" className="alignImages"/>
+                        </label>
+                        <label>
+                            <input
+                                type="radio"
+                                value="center"
+                                name="alignment"
+                                checked={selectedAlignment === "center"}
+                                onChange={handleAlignmentChange}
+                            />
+                            <img src="./centerAlign.png" className="alignImages"/>
+                        </label>
+                        <label>
+                            <input
+                                type="radio"
+                                value="right"
+                                name="alignment"
+                                checked={selectedAlignment === "right"}
+                                onChange={handleAlignmentChange}
+                            />
+                            <img src="./rightAlign.png" className="alignImages"/>
+                        </label>
                     </div>
                 </div>
                 <div className="PDFButton">
@@ -358,8 +404,29 @@ function App() {
                 </div>
             </div>
         </div>
-
     );
+}
+
+function getFont(selectedFont) {
+    switch (selectedFont) {
+        case 'courier':
+            return "Courier New";
+
+        case 'arial':
+            return "Arial";
+
+        case 'timesNewRoman':
+            return "Times New Roman";
+
+        case 'helvetica':
+            return "Helvetica";
+
+        case 'futura':
+            return "Futura"
+
+        default:
+            return "Courier New";
+    }
 }
 
 function getBackgroundImage(selectedBg) {

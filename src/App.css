@@ -166,19 +166,12 @@ footer {
     height: 20px;
     margin-left: 15px;
     border-radius: 5px;
-    margin-bottom: 4%;
+    margin-bottom: 6%;
+    vertical-align: 7px;
 }
 
 .habitBuilder p {
     text-align: center;
-}
-
-.quote {
-    font-family: "Courier New", sans-serif;
-    font-weight: bold;
-    margin: auto;
-    text-align: center;
-    user-select: none;
 }
 
 .habitPaper {
@@ -192,7 +185,8 @@ footer {
     margin: auto;
     border: 2px solid black;
     padding: 0px;
-
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 .habitPaper input {
@@ -220,8 +214,7 @@ td {
 
 
 .weeks h1 {
-    font-family: "Courier New", sans-serif;
-    font-size: medium;
+    font-size: 15px;
     margin-left: 2%;
     margin-bottom: 9px;
     height: 6px;
@@ -242,9 +235,9 @@ td {
 }
 
 .legend h1 {
-    font-family: "Courier New", sans-serif;
     font-size: larger;
     max-width: 408px;
+    text-align: center;
 }
 
 .buttons {
@@ -280,6 +273,7 @@ td {
 .triangled {
     font-size: 28px;
     font-weight: bold;
+    font-family: "Courier New", sans-serif;
     margin: auto;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
@@ -326,6 +320,35 @@ Circle {
     margin: auto;
     text-align: center;
     max-width: 407px;
+}
+
+.fontMenu {
+    font-family: "Courier New", sans-serif;
+    margin: auto;
+    text-align: center;
+    user-select: none;
+}
+
+select {
+    background: #fff8f0;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.alignImages {
+    width: 30px;
+    height: 30px;
+    filter: invert(38%) sepia(4%) saturate(1421%) hue-rotate(314deg) brightness(104%) contrast(93%);
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 10%;
+}
+
+.alignImages:hover {
+    width: 30px;
+    height: 30px;
+    background: #dbdbdb;
+    border-radius: 10px;
 }
 
 .PDFButton {
