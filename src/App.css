@@ -201,6 +201,7 @@ td {
     width: 408px;
     max-width: 408px;
     max-height: 117.333333px;
+    padding: 0px;
 }
 
 
@@ -216,6 +217,7 @@ td {
 .weeks h1 {
     font-size: 15px;
     margin-left: 2%;
+    margin-right: 2%;
     margin-bottom: 9px;
     height: 6px;
 }
@@ -333,6 +335,7 @@ select {
     background: #fff8f0;
     border-radius: 100px;
     text-align: center;
+    color: #756363;
 }
 
 .alignImages {
