@@ -27,7 +27,7 @@ input {
 
 header {
     text-align: center;
-    font-family: 'Courier New', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 30px;
     box-shadow: none;
 }
@@ -61,6 +61,7 @@ header img {
     filter: invert(38%) sepia(4%) saturate(1421%) hue-rotate(314deg) brightness(104%) contrast(93%);
     margin-right: 10px;
     margin-left: 10px;
+    transition: transform 0.3s ease 0s;
 }
 
 header img:hover {
@@ -68,10 +69,12 @@ header img:hover {
     height: 40px;
     width: 40px;
     border-radius: 4px;
+    transform: translateY(-10px);
 }
 
 .insta:hover {
     border-radius: 10px;
+    transform: translateY(-10px);
 }
 
 .references {
@@ -80,6 +83,8 @@ header img:hover {
     font-family: "Courier New", sans-serif;
     text-align: center;
 }
+
+
 
 .references a:hover {
     background: none;
@@ -325,7 +330,7 @@ Circle {
 }
 
 .fontMenu {
-    font-family: "Courier New", sans-serif;
+    font-family: "Arial Rounded MT Bold", sans-serif;
     margin: auto;
     text-align: center;
     user-select: none;
@@ -351,7 +356,7 @@ select {
     width: 30px;
     height: 30px;
     background: #dbdbdb;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 .PDFButton {
@@ -362,10 +367,10 @@ select {
 }
 
 .downloadPdf {
-    border: 1.5px solid black;
+    border: 3px solid #756363;
     border-radius: 100px;
     font-family: Arial, sans-serif;
-    color: Black;
+    color: #756363;
     font-size: 20px;
     padding: 8px;
     background: #fff8f0;
@@ -373,6 +378,8 @@ select {
 }
 
 .downloadPdf:hover {
-    background: #dbdbdb;
+    background: #756363;
+    color: #fff8f0;
     text-decoration: none;
+    transition: background-color 250ms;
 }

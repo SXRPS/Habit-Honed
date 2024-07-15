@@ -363,7 +363,6 @@ function App() {
                             <option value="courier">Courier New</option>
                             <option value="arial">Arial</option>
                             <option value="timesNewRoman">Times New Roman</option>
-                            <option value="helvetica">Helvetica</option>
                             <option value="futura">Futura</option>
                         </select>
                         <br/>
@@ -418,8 +417,6 @@ function getFont(selectedFont) {
         case 'timesNewRoman':
             return "Times New Roman";
 
-        case 'helvetica':
-            return "Helvetica";
 
         case 'futura':
             return "Futura"
