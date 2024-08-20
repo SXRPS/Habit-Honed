@@ -396,7 +396,11 @@ function App() {
                             />
                             <img src="./rightAlign.png" className="alignImages"/>
                         </label>
+                        <div className="infoButton">
+                            <a className="IB"><img src="./info.png"/></a>
+                        </div>
                     </div>
+
                 </div>
                 <div className="PDFButton">
                     <button className="downloadPdf" onClick={saveAsPdf}>Download PDF</button>

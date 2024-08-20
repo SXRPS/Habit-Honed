@@ -1,3 +1,15 @@
+@keyframes slideInLeft {
+    from, 0% {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+
+    to, 100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -30,17 +42,20 @@ header {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     box-shadow: none;
+
 }
 
 header h1 {
     margin: 0;
     color: #756363;
+    animation: slideInLeft 2s ease 0s;
 }
 
 header p {
     margin-top: 5px;
     color: #666;
     margin-bottom: 7%;
+    animation: slideInLeft 2.5s ease 0s;
 }
 
 header button, a {
@@ -61,6 +76,7 @@ header img {
     filter: invert(38%) sepia(4%) saturate(1421%) hue-rotate(314deg) brightness(104%) contrast(93%);
     margin-right: 10px;
     margin-left: 10px;
+    animation: slideInLeft 3s ease 0s;
     transition: transform 0.3s ease 0s;
 }
 
@@ -73,7 +89,7 @@ header img:hover {
 }
 
 .insta:hover {
-    border-radius: 10px;
+    border-radius: 11px;
     transform: translateY(-10px);
 }
 
@@ -330,10 +346,16 @@ Circle {
 }
 
 .fontMenu {
-    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-family: "Arial", sans-serif;
     margin: auto;
     text-align: center;
     user-select: none;
+}
+
+.IB img{
+    height: 20px;
+    width: 20px;
+    filter: invert(38%) sepia(4%) saturate(1421%) hue-rotate(314deg) brightness(104%) contrast(93%);
 }
 
 select {
