@@ -352,10 +352,20 @@ Circle {
     user-select: none;
 }
 
-.IB img{
+.IB img {
     height: 20px;
     width: 20px;
     filter: invert(38%) sepia(4%) saturate(1421%) hue-rotate(314deg) brightness(104%) contrast(93%);
+    background: none;
+}
+
+.IB:hover {
+    background: none;
+}
+
+.IB img:hover {
+    background: #dbdbdb;
+    border-radius: 20px;
 }
 
 select {
@@ -363,6 +373,10 @@ select {
     border-radius: 100px;
     text-align: center;
     color: #756363;
+}
+
+select:hover {
+    cursor: pointer;
 }
 
 .alignImages {
@@ -375,6 +389,7 @@ select {
 }
 
 .alignImages:hover {
+    cursor: pointer;
     width: 30px;
     height: 30px;
     background: #dbdbdb;
@@ -389,6 +404,7 @@ select {
 }
 
 .downloadPdf {
+    cursor: pointer;
     border: 3px solid #756363;
     border-radius: 100px;
     font-family: Arial, sans-serif;

@@ -5,6 +5,7 @@ import {Triangle} from "./Triangle";
 import {useState} from "react";
 import html2pdf from 'html2pdf.js';
 import React from "react";
+import HowToInfo from "./HowToInfo.js"
 
 function App() {
 
@@ -52,6 +53,7 @@ function App() {
         html2pdf().from(element).set(opt).save();
     };
 
+    const [buttonPopup, setButtonPopup] = useState(false);
 
     return (
         <div className="App">
@@ -397,7 +399,13 @@ function App() {
                             <img src="./rightAlign.png" className="alignImages"/>
                         </label>
                         <div className="infoButton">
-                            <a className="IB"><img src="./info.png"/></a>
+                            <a className="IB"><img src="./info.png" onClick={() => setButtonPopup(true)}/></a>
+                            <HowToInfo trigger={buttonPopup} setTrigger={setButtonPopup}>
+                                <h2>How Does This Work?</h2>
+                                <p>Utilizing the buttons located on the left-hand side of the page, you may add and subtract shaped checkboxes to your habit sheet.</p>
+                                <p>Would you like to build a habit of drinking more water?</p>
+                                <p>Then what you you could do is add three square, circle, or triangle checkboxes, and write in the coordinating shape's text in the legend "Drink 3L water"</p>
+                            </HowToInfo>
                         </div>
                     </div>
 
