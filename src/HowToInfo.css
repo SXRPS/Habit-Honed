@@ -28,6 +28,8 @@
     background: none;
     border: none;
     font-size: 25px;
+    height: 0px;
+    width: 0px;
     color: #756363;
 }
 

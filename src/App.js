@@ -103,55 +103,50 @@ function App() {
                     <div className='buttons'>
                         <div className="rowOne">
                             <div className='circles'>
-                                <button
-                                    onClick={() => setWeekOneCircles(prevState => prevState.slice(0, prevState.length - 1))}>-
+                                <button onClick={() => setWeekOneCircles(prevState => prevState.slice(0, prevState.length - 1))} className="checkboxButtons">-
                                 </button>
                                 <Circle></Circle>
-                                <button onClick={() => setWeekOneCircles([...weekOneCircles, (<Circle></Circle>)])}>+
+                                <button onClick={() => setWeekOneCircles([...weekOneCircles, (<Circle></Circle>)])} className="checkboxButtons">+
                                 </button>
                             </div>
                             <div className='squares'>
-                                <button
-                                    onClick={() => setWeekOneSquares(prevState => prevState.slice(0, prevState.length - 1))}>-
+                                <button onClick={() => setWeekOneSquares(prevState => prevState.slice(0, prevState.length - 1))} className="checkboxButtons">-
                                 </button>
                                 <Square></Square>
-                                <button onClick={() => setWeekOneSquares([...weekOneSquares, (<Square></Square>)])}>+
+                                <button onClick={() => setWeekOneSquares([...weekOneSquares, (<Square></Square>)])} className="checkboxButtons">+
                                 </button>
                             </div>
                             <div className='triangles'>
-                                <button
-                                    onClick={() => setWeekOneTriangles(prevState => prevState.slice(0, prevState.length - 1))}>-
+                                <button onClick={() => setWeekOneTriangles(prevState => prevState.slice(0, prevState.length - 1))} className="checkboxButtons">-
                                 </button>
                                 <Triangle></Triangle>
-                                <button onClick={() => setWeekOneTriangles([...weekOneTriangles, (
-                                    <Triangle></Triangle>)])}>+
+                                <button onClick={() => setWeekOneTriangles([...weekOneTriangles, (<Triangle></Triangle>)])} className="checkboxButtons">+
                                 </button>
                             </div>
                         </div>
                         <div className="rowTwo">
                             <div id='circles'>
                                 <button
-                                    onClick={() => setWeekTwoCircles(prevState => prevState.slice(0, prevState.length - 1))}>-
+                                    onClick={() => setWeekTwoCircles(prevState => prevState.slice(0, prevState.length - 1))} className="checkboxButtons">-
                                 </button>
                                 <Circle></Circle>
-                                <button onClick={() => setWeekTwoCircles([...weekTwoCircles, (<Circle></Circle>)])}>+
+                                <button onClick={() => setWeekTwoCircles([...weekTwoCircles, (<Circle></Circle>)])} className="checkboxButtons">+
                                 </button>
                             </div>
                             <div id='squares'>
                                 <button
-                                    onClick={() => setWeekTwoSquares(prevState => prevState.slice(0, prevState.length - 1))}>-
+                                    onClick={() => setWeekTwoSquares(prevState => prevState.slice(0, prevState.length - 1))} className="checkboxButtons">-
                                 </button>
                                 <Square></Square>
-                                <button onClick={() => setWeekTwoSquares([...weekTwoSquares, (<Square></Square>)])}>+
+                                <button onClick={() => setWeekTwoSquares([...weekTwoSquares, (<Square></Square>)])} className="checkboxButtons">+
                                 </button>
                             </div>
                             <div id='triangles'>
                                 <button
-                                    onClick={() => setWeekTwoTriangles(prevState => prevState.slice(0, prevState.length - 1))}>-
+                                    onClick={() => setWeekTwoTriangles(prevState => prevState.slice(0, prevState.length - 1))} className="checkboxButtons">-
                                 </button>
                                 <Triangle></Triangle>
-                                <button onClick={() => setWeekTwoTriangles([...weekTwoTriangles, (
-                                    <Triangle></Triangle>)])}>+
+                                <button onClick={() => setWeekTwoTriangles([...weekTwoTriangles, (<Triangle></Triangle>)])} className="checkboxButtons">+
                                 </button>
                             </div>
                         </div>
@@ -178,7 +173,7 @@ function App() {
                         </tr>
                         <tr className='weeks'>
                             <td id='weekOne'>
-                                <h1>Day One</h1>
+                                <h1>Monday</h1>
                                 <div className='habit-row'>
                                     {weekOneCircles}
                                 </div>
@@ -190,7 +185,7 @@ function App() {
                                 </div>
                             </td>
                             <td>
-                                <h1>Day Eight</h1>
+                                <h1>Monday</h1>
                                 <div className='habit-row'>
                                     {weekTwoCircles}
                                 </div>
@@ -204,7 +199,7 @@ function App() {
                         </tr>
                         <tr className='weeks'>
                             <td>
-                                <h1>Day Two</h1>
+                                <h1>Tuesday</h1>
                                 <div className='habit-row'>
                                     {weekOneCircles}
                                 </div>
@@ -216,7 +211,7 @@ function App() {
                                 </div>
                             </td>
                             <td>
-                                <h1>Day Nine</h1>
+                                <h1>Tuesday</h1>
                                 <div className='habit-row'>
                                     {weekTwoCircles}
                                 </div>
@@ -230,7 +225,7 @@ function App() {
                         </tr>
                         <tr className='weeks'>
                             <td id='weekOne'>
-                                <h1>Day Three</h1>
+                                <h1>Wednesday</h1>
                                 <div className='habit-row'>
                                     {weekOneCircles}
                                 </div>
@@ -242,7 +237,7 @@ function App() {
                                 </div>
                             </td>
                             <td id='weekTwo'>
-                                <h1>Day Ten</h1>
+                                <h1>Wednesday</h1>
                                 <div className='habit-row'>
                                     {weekTwoCircles}
                                 </div>
@@ -256,7 +251,7 @@ function App() {
                         </tr>
                         <tr className='weeks'>
                             <td id='weekOne'>
-                                <h1>Day Four</h1>
+                                <h1>Thursday</h1>
                                 <div className='habit-row'>
                                     {weekOneCircles}
                                 </div>
@@ -268,7 +263,7 @@ function App() {
                                 </div>
                             </td>
                             <td id='weekTwo'>
-                                <h1>Day Eleven</h1>
+                                <h1>Thursday</h1>
                                 <div className='habit-row'>
                                     {weekTwoCircles}
                                 </div>
@@ -282,7 +277,7 @@ function App() {
                         </tr>
                         <tr className='weeks'>
                             <td id='weekOne'>
-                                <h1>Day Five</h1>
+                                <h1>Friday</h1>
                                 <div className='habit-row'>
                                     {weekOneCircles}
                                 </div>
@@ -294,7 +289,7 @@ function App() {
                                 </div>
                             </td>
                             <td id='weekTwo'>
-                                <h1>Day Twelve</h1>
+                                <h1>Friday</h1>
                                 <div className='habit-row'>
                                     {weekTwoCircles}
                                 </div>
@@ -308,7 +303,7 @@ function App() {
                         </tr>
                         <tr className='weeks'>
                             <td id='weekOne'>
-                                <h1>Day Six</h1>
+                                <h1>Saturday</h1>
                                 <div className='habit-row'>
                                     {weekOneCircles}
                                 </div>
@@ -320,7 +315,7 @@ function App() {
                                 </div>
                             </td>
                             <td id='weekTwo'>
-                                <h1>Day Thirteen</h1>
+                                <h1>Saturday</h1>
                                 <div className='habit-row'>
                                     {weekTwoCircles}
                                 </div>
@@ -334,7 +329,7 @@ function App() {
                         </tr>
                         <tr className='weeks'>
                             <td id='weekOne'>
-                                <h1>Day Seven</h1>
+                                <h1>Sunday</h1>
                                 <div className='habit-row'>
                                     {weekOneCircles}
                                 </div>
@@ -346,7 +341,7 @@ function App() {
                                 </div>
                             </td>
                             <td id='weekTwo'>
-                                <h1>Day Fourteen</h1>
+                                <h1>Sunday</h1>
                                 <div className='habit-row'>
                                     {weekTwoCircles}
                                 </div>
@@ -404,7 +399,7 @@ function App() {
                                 <h2>How Does This Work?</h2>
                                 <p>Utilizing the buttons located on the left-hand side of the page, you may add and subtract shaped checkboxes to your habit sheet.</p>
                                 <p>Would you like to build a habit of drinking more water?</p>
-                                <p>Then what you you could do is add three square, circle, or triangle checkboxes, and write in the coordinating shape's text in the legend "Drink 3L water"</p>
+                                <p>Then what you could do is add three square, circle, or triangle checkboxes, and write in the coordinating shape's text in the legend "Drink 3L water"</p>
                             </HowToInfo>
                         </div>
                     </div>
