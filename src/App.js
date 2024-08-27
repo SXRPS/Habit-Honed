@@ -160,14 +160,11 @@ function App() {
                             <td align='center'>
                                 <h1>Legend</h1>
                                 <div align='left'>
-                                    <label><Circle></Circle><input type='text' className='legend-input'
-                                                          placeholder='Read 10% of my book...'/></label>
+                                    <label><Circle></Circle><input type='text' className='legend-input' placeholder='Read 10% of my book...' style={{fontFamily: getFont(selectedFont)}}/></label>
                                     <br/>
-                                    <label><Square></Square><input type='text' className='legend-input'
-                                                          placeholder='Journal one page...'/></label>
+                                    <label><Square></Square><input type='text' className='legend-input' placeholder='Journal one page...' style={{fontFamily: getFont(selectedFont)}}/></label>
                                     <br/>
-                                    <label><Triangle></Triangle><input type='text' className='legend-input'
-                                                          placeholder='Write habits here...'/></label>
+                                    <label><Triangle></Triangle><input type='text' className='legend-input' placeholder='Write habits here...' style={{fontFamily: getFont(selectedFont)}}/></label>
                                 </div>
                             </td>
                         </tr>
@@ -356,7 +353,7 @@ function App() {
                     </table>
                     <div className="fontMenu">
                         <p>Font & Margin</p>
-                        <select value={selectedFont} onChange={handleFontChange}>
+                        <select value={selectedFont} onChange={handleFontChange} style={{fontFamily: getFont(selectedFont)}}>
                             <option value="courier">Courier New</option>
                             <option value="arial">Arial</option>
                             <option value="timesNewRoman">Times New Roman</option>
@@ -397,9 +394,10 @@ function App() {
                             <a className="IB"><img src="./info.png" onClick={() => setButtonPopup(true)}/></a>
                             <HowToInfo trigger={buttonPopup} setTrigger={setButtonPopup}>
                                 <h2>How Does This Work?</h2>
-                                <p>Utilizing the buttons located on the left-hand side of the page, you may add and subtract shaped checkboxes to your habit sheet.</p>
-                                <p>Would you like to build a habit of drinking more water?</p>
-                                <p>Then what you could do is add three square, circle, or triangle checkboxes, and write in the coordinating shape's text in the legend "Drink 3L water"</p>
+                                <p>Utilizing the buttons located on the left-hand side of the page, you may add and subtract shaped checkboxes to week one and two of your habit sheet.</p>
+                                <img src="./sideButtons.png" className="popup-img"/>
+                                <p>Would you like to build a habit of drinking more water, or maybe journal more? Here's how that can look:</p>
+                                <img src="./HabitTracker.png" className="tracker-img" />
                             </HowToInfo>
                         </div>
                     </div>

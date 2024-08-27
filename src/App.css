@@ -365,6 +365,17 @@ Circle {
 .IB img:hover {
     background: #dbdbdb;
     border-radius: 20px;
+    transition: background-color 250ms;
+}
+
+.popup-img {
+    height: 220px;
+    width: 100px;
+}
+
+.tracker-img {
+    height: 233px;
+    width: 408px;
 }
 
 select {
@@ -372,6 +383,8 @@ select {
     border-radius: 100px;
     text-align: center;
     color: #756363;
+    height: 20px;
+    width: 135px;
 }
 
 select:hover {
