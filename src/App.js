@@ -393,11 +393,7 @@ function App() {
                         <div className="infoButton">
                             <a className="IB"><img src="./info.png" onClick={() => setButtonPopup(true)}/></a>
                             <HowToInfo trigger={buttonPopup} setTrigger={setButtonPopup}>
-                                <h2>How Does This Work?</h2>
-                                <p>Utilizing the buttons located on the left-hand side of the page, you may add and subtract shaped checkboxes to week one and two of your habit sheet.</p>
-                                <img src="./sideButtons.png" className="popup-img"/>
-                                <p>Would you like to build a habit of drinking more water, or maybe journal more? Here's how that can look:</p>
-                                <img src="./HabitTracker.png" className="tracker-img" />
+
                             </HowToInfo>
                         </div>
                     </div>
