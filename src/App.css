@@ -88,19 +88,12 @@ header img:hover {
     transform: translateY(-10px);
 }
 
-.insta:hover {
-    border-radius: 11px;
-    transform: translateY(-10px);
-}
-
 .references {
     margin-bottom: 7%;
     border-radius: 10px;
     font-family: "Courier New", sans-serif;
     text-align: center;
 }
-
-
 
 .references a:hover {
     background: none;
@@ -120,7 +113,7 @@ footer {
     background: #fff8f0;
     margin: auto;
     padding-top: 35px;
-    background-image: url("wavesNegative.svg") ;
+    background-image: url("wavesNegative.svg");
     background-size: 150% 66%;
     background-repeat: no-repeat;
     background-position-y: bottom;
@@ -366,16 +359,6 @@ Circle {
     background: #dbdbdb;
     border-radius: 20px;
     transition: background-color 250ms;
-}
-
-.popup-img {
-    height: 220px;
-    width: 100px;
-}
-
-.tracker-img {
-    height: 233px;
-    width: 408px;
 }
 
 select {

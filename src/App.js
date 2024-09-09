@@ -64,7 +64,6 @@ function App() {
                 <p>Habit Tracker PDF Builder</p>
                 <div className="references">
                 <a href='https://www.linkedin.com/in/marc-anthony-serpa-90849529b' target={'_blank'}><img src="./LinkedinLogo.png"/></a>
-                    <a href='https://www.instagram.com/marcsxrpa/' target={'_blank'}><img src="./InstaLogo.png" className="insta"/></a>
                 </div>
                 <button onClick={scrollToHabitBuilder}>&#9660;</button>
             </header>
