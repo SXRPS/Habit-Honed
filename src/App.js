@@ -356,7 +356,7 @@ function App() {
                             <option value="courier">Courier New</option>
                             <option value="arial">Arial</option>
                             <option value="timesNewRoman">Times New Roman</option>
-                            <option value="futura">Futura</option>
+                            <option value="outfit">Outfit</option>
                         </select>
                         <br/>
                         <label>
@@ -418,8 +418,8 @@ function getFont(selectedFont) {
             return "Times New Roman";
 
 
-        case 'futura':
-            return "Futura"
+        case 'outfit':
+            return "Outfit"
 
         default:
             return "Courier New";
