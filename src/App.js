@@ -63,9 +63,9 @@ function App() {
                 <h1>Habit-Honed</h1>
                 <p>Habit Tracker PDF Builder</p>
                 <div className="references">
-                <a href='https://www.linkedin.com/in/marc-anthony-serpa-90849529b' target={'_blank'}><img src="./LinkedinLogo.png"/></a>
+                <a href='https://www.linkedin.com/in/marc-anthony-serpa-90849529b' target={'_blank'} className="donate-btn">If you enjoy the site, please consider helping <b>keep it alive.</b></a>
                 </div>
-                <button onClick={scrollToHabitBuilder}>&#9660;</button>
+                <button onClick={scrollToHabitBuilder}>&#8595;</button>
             </header>
 
             <div className='habitBuilder'>
@@ -392,7 +392,6 @@ function App() {
                         <div className="infoButton">
                             <a className="IB"><img src="./info.png" onClick={() => setButtonPopup(true)}/></a>
                             <HowToInfo trigger={buttonPopup} setTrigger={setButtonPopup}>
-
                             </HowToInfo>
                         </div>
                     </div>

@@ -47,7 +47,9 @@ function HowToInfo(props) {
                 {/* Conditional rendering of sections with animation */}
                 {activeSection === 'section1' && (
                     <div className="section animated-section">
-                        <p>Utilizing the buttons located on the left-hand side of the page, you may add and subtract shaped checkboxes to week one and two of your habit sheet.</p>
+                        <p>Utilize the buttons located on the left-hand side of the habit sheet. You may <span
+                            className="red-span">add</span> and <span className="red-span">subtract</span> shaped checkboxes
+                            to week one & two of your habit sheet.</p>
                         <img src="./sideButtons.png" className="popup-img" />
                         <p>Choose from four themes through all seasons of the year!</p>
                         <img src="./popup-themes-img.png" className="themes-img" />
@@ -62,7 +64,11 @@ function HowToInfo(props) {
                 )}
                 {activeSection === 'section3' && (
                     <div className="section animated-section">
-                        Content for Section 3
+                        <p>Once you finish personalizing your habit tracker you can click the "Download PDF" button
+                            located at the bottom of the page.</p>
+                        <img src="./habit-tracker-ereader-img.jpeg" className="habit-tracker-ereader-img"/>
+                        <p className="section3-p">You're done! You can now either print the habit tracker, or send to any pdf editor of your
+                            choice, such as Adobe Acrobat or even Kindle Scribe!</p>
                     </div>
                 )}
 

@@ -1,4 +1,4 @@
-@keyframes slideInLeft {
+@keyframes slideInUp {
     from, 0% {
         transform: translateY(500px);
         opacity: 0;
@@ -23,13 +23,12 @@ body {
 
 .dots {
     max-width: 100%;
-    height: 40vh;
+    height: 40.4vh;
     padding: 1px;
     background-color: rgba(230, 240, 255, 0);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-    border-radius: 8px;
     opacity: 0.8;
-    background-image: radial-gradient(#000000 1.5px, #fff8f0 1.5px);
+    background-image: radial-gradient(#000000 25%, #fff8f0 25%);
     background-size: 10px 10px;
 }
 
@@ -42,24 +41,23 @@ header {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     box-shadow: none;
-
 }
 
 header h1 {
     margin: 0;
     color: #756363;
-    animation: slideInLeft 2s ease 0s;
+    animation: slideInUp 2s ease 0s;
 }
 
 header p {
     margin-top: 5px;
     color: #756363;
     margin-bottom: 7%;
-    animation: slideInLeft 2.5s ease 0s;
+    animation: slideInUp 2.5s ease 0s;
 }
 
 header button, a {
-    font-size: 24px;
+    font-size: 50px;
     cursor: pointer;
     background: none;
     border: none;
@@ -68,6 +66,7 @@ header button, a {
     border-radius: 10px;
     text-decoration: none;
     text-underline: none;
+    animation: slideInUp 3.5s ease 0s;
 }
 
 header img {
@@ -76,7 +75,7 @@ header img {
     filter: invert(38%) sepia(4%) saturate(1421%) hue-rotate(314deg) brightness(104%) contrast(93%);
     margin-right: 10px;
     margin-left: 10px;
-    animation: slideInLeft 3s ease 0s;
+    animation: slideInUp 3s ease 0s;
     transition: transform 0.3s ease 0s;
 }
 
@@ -89,15 +88,12 @@ header img:hover {
 }
 
 .references {
-    margin-bottom: 7%;
+    margin-bottom: 6%;
     border-radius: 10px;
-    font-family: "Courier New", sans-serif;
+    font-family: "outfit", sans-serif;
     text-align: center;
 }
 
-.references a:hover {
-    background: none;
-}
 
 table {
     max-width: 816px;

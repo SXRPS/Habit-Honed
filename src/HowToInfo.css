@@ -1,3 +1,13 @@
+@keyframes popup-expand {
+    from, 0% {
+        opacity: 0%;
+    }
+
+    to, 100% {
+        opacity: 100%;
+    }
+}
+
 .popup {
     position: fixed;
     top: 0;
@@ -8,6 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: popup-expand 0.5s ease 0s;
 }
 
 .popup-inner {
@@ -54,25 +65,58 @@
     font-size: 20px;
 }
 
+.red-span {
+    color: red;
+}
+
 .section2-p {
     margin-bottom: 15px;
+}
+
+.section3-p {
+    margin-bottom: 15px;
+}
+
+.popup-quote, .popup-quote-author {
+    margin-bottom: 1px;
+}
+
+.popup-quote-author {
+    margin-left: 120px;
+}
+
+.bold {
+    color: darkslategray;
 }
 
 .popup-img {
     height: 220px;
     width: 100px;
     margin-bottom: 20px;
+    -webkit-user-drag: none;
 }
 
 .themes-img {
     height: 52px;
     width: 323px;
+    -webkit-user-drag: none;
 }
 
 .tracker-img {
     height: 349px;
     width: 608px;
     outline: .5px solid black;
+    -webkit-user-drag: none;
+}
+
+.habit-tracker-ereader-img {
+    height: 300px;
+    width: 230px;
+    border-radius: 40px;
+    border: 3px solid black;
+    margin-bottom: 15px;
+    -webkit-user-drag: none;
+    box-shadow: 3px 3px gray, -1em 0 .4em #756363;
 }
 
 /* Arrow flip animation along X-axis */
