@@ -69,6 +69,11 @@ header button, a {
     animation: slideInUp 3.5s ease 0s;
 }
 
+.subtitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+}
+
 header img {
     width: 40px;
     height: 40px;
@@ -110,7 +115,7 @@ footer {
     margin: auto;
     padding-top: 35px;
     background-image: url("wavesNegative.svg");
-    background-size: 150% 66%;
+    background-size: 190% 110%;
     background-repeat: no-repeat;
     background-position-y: bottom;
 }
@@ -397,13 +402,14 @@ select:hover {
 .downloadPdf {
     cursor: pointer;
     border: 3px solid #756363;
-    border-radius: 100px;
+    border-radius: 5px;
     font-family: Arial, sans-serif;
     color: #756363;
     font-size: 20px;
     padding: 8px;
     background: #fff8f0;
     text-decoration: none;
+    margin: 50px;
 }
 
 .downloadPdf:hover {

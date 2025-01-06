@@ -39,6 +39,13 @@ function App() {
         habitBuilderElement.scrollIntoView({behavior: 'smooth'});
     };
 
+    const handleLegendShapes = () => {
+        if  (document.getElementsByClassName('weeks').innerHTML == '.circled') {
+            document.getElementsByClassName('legend').innerHTML = '<label><Circle></Circle><input type=\'text\' className=\'legend-input\' placeholder=\'Read 10% of my book...\' style={{fontFamily: getFont(selectedFont)}}/></label>\n' +
+                '<br/>';
+        }
+    }
+
     const saveAsPdf = () => {
         const element = document.getElementById('habitPaper');
         const opt = {
@@ -63,7 +70,7 @@ function App() {
                 <h1>Habit-Honed</h1>
                 <p>Habit Tracker PDF Builder</p>
                 <div className="references">
-                <a href='https://www.linkedin.com/in/marc-anthony-serpa-90849529b' target={'_blank'} className="donate-btn">If you enjoy the site, please consider helping <b>keep it alive.</b></a>
+                <p className="subtitle">Take your habits two weeks at a time</p>
                 </div>
                 <button onClick={scrollToHabitBuilder}>&#8595;</button>
             </header>
